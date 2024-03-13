@@ -1,7 +1,7 @@
 {
   "name": "outside",
   "version": "3.0.0",
-  "description": "Boilerplate for WDD 330 SleepOutside project",
+  "description": "Savory Search is a comprehensive recipe finder and organizer, empowering users to effortlessly explore, save, and share culinary delights",
   "main": "main.js",
   "scripts": {
     "start": "vite",
@@ -12,7 +12,7 @@
     "test": "jest"
     
   },
-  "author": "Shane Thompson",
+  "author": "Alec J Willits",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.26.0",

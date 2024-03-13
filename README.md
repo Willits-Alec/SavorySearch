@@ -2,11 +2,7 @@
 
 ## Description
 
-Use this as a starting point to complete the WDD 330 team activity: the SleepOutside web application. It scaffolds out a simple web app with Vite support to bundle up our assets.
-
-## Prerequisites
-
-- You must have Node installed. visit https://byui-cit.github.io/advcss/lesson01/l01-software.html and skip to the Node section for instructions
+Savory Search is a user-friendly web application designed to simplify the process of discovering, saving, and sharing recipes. It provides a platform for home cooks and food enthusiasts to explore a wide range of recipes from various sources and contribute their own culinary creations.
 
 ## Setup
 
