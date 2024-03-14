@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/*--------------- Reset Styles --------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*--------------- Body Styles --------------------*/
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fcf6f0; /* Light cream */
+  color: #444; /* Dark gray */
+}
+
+/*--------------- Header Styles --------------------*/
+header {
+  background-color: #f9d6ac; /* Light apricot */
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #663300; /* Brown */
+}
+
+/*--------------- Main Styles --------------------*/
+main {
+  padding: 2rem;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #663300; /* Brown */
+}
+
+/*--------------- Footer Styles --------------------*/
+footer {
+  background-color: #663300; /* Brown */
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem; /* Add margin to separate paragraphs */
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f9d6ac; /* Light apricot */
+}
+
+/*--------------- Footer Content --------------------*/
+.footer-links {
+  margin-bottom: 2rem; /* Add margin to separate links from paragraphs */
+}
+
+.footer-links a {
+  margin: 0 1rem; /* Add spacing between links */
+}
+
+.footer-social {
+  margin-top: 2rem; /* Add margin above social icons */
+}
+
+.footer-social a {
+  display: inline-block; 
+  margin: 0 0.5rem; 
+  font-size: 1.5rem; 
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+/*--------------- Additional Styles for About Page --------------------*/
+/* Center-align the main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style headings */
+.about-section h2 {
+  font-size: 2rem;
+  color: #663300; /* Brown */
+  margin-bottom: 1.5rem;
+}
+
+/* Style paragraphs */
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444; /* Dark gray */
+  margin-bottom: 1.5rem;
+}
+
+/* Add spacing between paragraphs */
+.about-section p + p {
+  margin-top: 1.5rem;
+}
