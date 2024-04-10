@@ -6,24 +6,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /*--------------- Body Styles --------------------*/
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #fcf6f0; /* Light cream */
-  color: #444; /* Dark gray */
+  background-color: #fcf6f0;
+  /* Light cream */
+  color: #444;
+  /* Dark gray */
 }
 
 /*--------------- Header Styles --------------------*/
 header {
-  background-color: #f9d6ac; /* Light apricot */
+  background-color: #f9d6ac;
+  /* Light apricot */
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Center align content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* Navigation styles */
 header nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
+  /* Center align navigation items */
 }
 
 header nav ul li {
@@ -32,7 +43,37 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #663300; /* Brown */
+  color: #663300;
+  /* Brown */
+}
+
+/* Login button styles */
+#login-btn {
+  margin-left: 1rem;
+  /* Adjust as needed */
+}
+
+#login-btn button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#login-btn button:hover {
+  background-color: #0056b3;
+}
+
+/* Title styles */
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #663300;
+  /* Brown */
+  /* Center align title */
+  text-align: center;
 }
 
 /*--------------- Main Styles --------------------*/
@@ -40,24 +81,127 @@ main {
   padding: 2rem;
 }
 
-main h1 {
-  font-size: 2rem;
+/* Round list items */
+.bowl-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: radial-gradient(circle at center, #f9f9f9 80%, transparent 80%);
+  border-radius: 50%;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Shadow */
+}
+
+main input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
   margin-bottom: 1rem;
-  color: #663300; /* Brown */
+}
+
+.searchable-items {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column ul li {
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  /* White background for links */
+  padding: 1rem;
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Shadow for depth */
+}
+
+.column ul li:hover {
+  animation: listItemHover 0.3s forwards;
+  /* Apply the animation on hover */
+}
+
+/* keyframe animation */
+@keyframes listItemHover {
+  0% {
+    transform: scale(1);
+    /* normal size */
+  }
+
+  100% {
+    transform: scale(1.1);
+    /* 110% size */
+  }
+}
+
+/*--------------- Login Styles --------------------*/
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  height: 100vh;
+}
+
+#login-form {
+  background-color: #f9d6ac; /* Light apricot - similar to header color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* Add margin to push the form down */
+}
+
+#login-form form {
+  text-align: center;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"],
+#login-form button {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#login-form button {
+  background-color: #007bff; /* Blue color for button */
+  color: white;
+  cursor: pointer;
+}
+
+#login-form button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
 }
 
 /*--------------- Footer Styles --------------------*/
 footer {
-  background-color: #663300; /* Brown */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #663300;
+  /* Brown */
   color: #fff;
   padding: 2rem;
   text-align: center;
 }
 
+
 footer p {
   font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 1rem; /* Add margin to separate paragraphs */
+  margin-bottom: 1rem;
+  /* Add margin to separate paragraphs */
 }
 
 footer a {
@@ -67,7 +211,8 @@ footer a {
 }
 
 footer a:hover {
-  color: #f9d6ac; /* Light apricot */
+  color: #f9d6ac;
+  /* Light apricot */
 }
 
 /*--------------- Additional Styles for About Page --------------------*/
@@ -81,7 +226,8 @@ main {
 /* Style headings */
 .about-section h2 {
   font-size: 2rem;
-  color: #663300; /* Brown */
+  color: #663300;
+  /* Brown */
   margin-bottom: 1.5rem;
 }
 
@@ -89,11 +235,12 @@ main {
 .about-section p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #444; /* Dark gray */
+  color: #444;
+  /* Dark gray */
   margin-bottom: 1.5rem;
 }
 
 /* Add spacing between paragraphs */
-.about-section p + p {
+.about-section p+p {
   margin-top: 1.5rem;
 }

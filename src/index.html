@@ -1,23 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Savory Search</title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Search</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <!-- Include the header placeholder -->
-  <div id="header-placeholder"></div>
+    <!-- Include the header placeholder -->
+    <div id="header-placeholder"></div>
 
-  <main>
-    <h1>Welcome to Savory Search</h1>
+    <main>
+      <h1>Welcome to Savory Search</h1>
+      <input type="text" id="search-input" placeholder="Search for a meal...">
+      <div id="search-results" class="meal-cards-container"></div> <!-- Replace ul with a container div -->
+      <div class="searchable-items">
+          <div class="column">
+              <h2>Search by: </h2>
+              <ul>
+                  <li>Meal name</li>
+                  <li>First letter</li>
+                  <li>Meal ID</li>
+                  <li>Random meal</li>
+              </ul>
+          </div>
+          <div class="column">
+              <h2>Filter by:</h2>
+              <ul>
+                  <li>Main ingredient</li>
+                  <li>Category</li>
+                  <li>Area</li>
+              </ul>
+          </div>
+          <div class="column">
+              <h2>Images: </h2>
+              <ul>
+                  <li>Meal thumbnail images</li>
+                  <li>Ingredient thumbnail images</li>
+              </ul>
+          </div>
+      </div>
   </main>
+  
 
-  <!-- Include the footer placeholder -->
-  <div id="footer-placeholder"></div>
+    <!-- Include the footer placeholder -->
+    <div id="footer-placeholder"></div>
 
-  <!-- Import main.js -->
-  <script src="./js/main.js" type="module"></script>
+    <!-- Import main.js -->
+    <script src="./js/main.js" type="module"></script>
 </body>
 </html>
