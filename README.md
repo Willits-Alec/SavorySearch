@@ -1,5 +1,3 @@
-# sleepoutside
-
 ## Description
 
 Savory Search is a user-friendly web application designed to simplify the process of discovering, saving, and sharing recipes. It provides a platform for home cooks and food enthusiasts to explore a wide range of recipes from various sources and contribute their own culinary creations.
